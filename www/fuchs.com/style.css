@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "anypro";
+    src: url("trench-font/TrenchThin-aZ1J.ttf");
+}
+body{
+    background-color: black;
+}
+h1,p{
+    color: snow;
+}
+h1{
+    font-family: anypro;
+}

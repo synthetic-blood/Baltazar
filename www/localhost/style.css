@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "anypro";
+    src: url("AnonymousPro-2O73w.ttf");
+}
+body{
+    background-color: black;
+}
+h1,p{
+    color: snow;
+}
+h1{
+    font-family: anypro;
+}
