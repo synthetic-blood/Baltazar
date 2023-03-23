@@ -46,7 +46,7 @@ int main() {
 	std::vector<std::thread> threads;
 	std::shared_ptr<tcp::socket> Socket(new tcp::socket(ioctx));
 	Acceptor.async_accept(*Socket, std::bind(AcceptConnection, std::placeholders::_1, Socket));
-	unsigned int max = std::thread::hardware_concurrency()*2;
+	unsigned int max = std::thread::hardware_concurrency() * 2;
 	for (int i = 0; i < max; i++) {
 		threads.emplace_back([i]() {
 			while (true) {
